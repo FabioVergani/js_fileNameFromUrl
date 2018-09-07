@@ -13,7 +13,7 @@ const fileNameFromUrl=x=>{
 						i=s.lastIndexOf('?');
 						if(i!==-1 && i!==--l){
 							b=s.substring(0,i)
-						}
+						}else{b=s}
 					}
 				}
 			}
