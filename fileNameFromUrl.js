@@ -2,16 +2,16 @@ const fileNameFromUrl=x=>{
 	let s=x,l=s.length,a=false,b=false;
 	if(l>1){
 		let i=s.lastIndexOf('/');
-		if(i!==-1 && ++i!==l){
-			s=s.substring(i,l);
+		if(i!==-1 && --l!==i){
+			s=s.substring(i);
 			if(l=s.length!==0){
 				i=s.lastIndexOf('.');
-				if(i!==-1 && i!==--l){
+				if(i!==-1 && --l!==i){
 					a=s.substring(0,i);
 					s=s.substring(++i);
-					if(l=s.length!==0){
+					if(l=s.length>1){
 						i=s.lastIndexOf('?');
-						if(i!==-1 && i!==--l){
+						if(i!==-1 && --l!==i){
 							b=s.substring(0,i)
 						}else{b=s}
 					}
