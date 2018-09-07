@@ -12,7 +12,7 @@ const fileNameFromUrl=x=>{
 					if(l=s.length!==0){
 						i=s.lastIndexOf('?');
 						if(i!==-1 && i!==--l){
-							estensione=s.substring(0,i)
+							b=s.substring(0,i)
 						}
 					}
 				}
@@ -21,11 +21,7 @@ const fileNameFromUrl=x=>{
 	};
 	return [a,b]//nome,estensione
 };
-
-
-/*
-
-//test:
+//
 [
 '.',
 'a.',
@@ -39,6 +35,4 @@ const fileNameFromUrl=x=>{
 'https://www.google.it/images/branding/googlelogo/2x/googlelogo_color_272x92dp.a?',
 'https://www.google.it/images/branding/googlelogo/2x/googlelogo_color_272x92dp.?',
 'https://www.google.it/images/branding/googlelogo/2x/googlelogo_color_272x92dp.pngz?v3'
-].forEach(x=>{console.log(x,fileNameFromUrl(x).join('\n'))});
-
-*/
+].forEach(x=>{console.log(x,'\n',fileNameFromUrl(x).join('\n'))});
