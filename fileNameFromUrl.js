@@ -13,7 +13,7 @@ const fileNameFromUrl=x=>{
 					l=s.length;
 					if(l>1){
 						i=s.lastIndexOf('?');
-						b=(i!==-1 && --l!==i)?s.substring(0,i):s.substring(0,l)
+						b=s.substring(0,(i!==-1 && --l!==i)?i:l)
 					}
 				}
 			}
