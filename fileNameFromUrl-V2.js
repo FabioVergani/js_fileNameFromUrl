@@ -13,6 +13,8 @@ const fileNameFromUrl=t=>{
 	};
 	return [a,b]//nome,estensione
 };
+
+/*
 //Test:
 [
 '.',
@@ -28,3 +30,4 @@ const fileNameFromUrl=t=>{
 'https://www.pippo.it/images/dir/dir/logo.?',
 'https://www.pippo.it/images/dir/dir/logo.pngz?v3'
 ].forEach(t=>{console.log(t,'\n',fileNameFromUrl(t).join('\n'))});
+*/
