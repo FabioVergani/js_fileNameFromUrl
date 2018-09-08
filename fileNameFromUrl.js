@@ -1,5 +1,5 @@
 const fileNameFromUrl=x=>{
-	let s=x,l=s.length,a=false,b=false;
+	let a=false,b=false,s=x,l=s.length;
 	if(l>1){
 		let i=s.lastIndexOf('/');
 		if(i!==-1 && --l!==i){
@@ -21,6 +21,9 @@ const fileNameFromUrl=x=>{
 	};
 	return [a,b]//nome,estensione
 };
+
+
+
 //
 [
 '.',
