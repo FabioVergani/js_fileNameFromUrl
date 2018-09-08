@@ -5,7 +5,7 @@ const fileNameFromUrl=x=>{
 		if(i!==-1 && --l!==i){
 			s=s.substring(i);
 			l=s.length;
-			if(l!==0){
+			if(l>1){
 				i=s.lastIndexOf('.');
 				if(i!==-1 && --l!==i){
 					a=s.substring(0,i);
